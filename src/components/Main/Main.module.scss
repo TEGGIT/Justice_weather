@@ -1,0 +1,124 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #589aff;
+    border-radius: 2rem;
+
+    &__content {
+      background: #ffffff;
+      border: 1px solid #c0c0c0;
+      width: 37.5rem;
+      display: flex;
+      justify-content: center;
+      border-radius: 0 0 2rem 2rem;
+
+      &__info {
+        display: flex;
+        justify-content: space-around;
+        width: 31.25rem;
+        align-items: center;
+
+        &__image {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1.25rem;
+
+          img {
+            width: 12.5rem;
+          }
+        }
+
+        &__weatherReport {
+          padding: 1rem;
+          border: 1px solid #f3f3f3;
+          background: #f5f5f5;
+          border-radius: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main_top {
+  padding: 1rem;
+  color: white;
+  font-family: Gugi, serif;
+  font-size: 2rem;
+}
+
+.content_info {
+  font-size: 1.2rem;
+  color: #6fa7ff;
+}
+
+.search {
+  align-items: center;
+  font-size: 1.25rem;
+  color: #3e93ff;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.content_info_img{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #6fa7ff;
+  padding: 0.5rem;
+}
+.main_top_error{
+  padding: 1rem;
+  color: #940000;
+  font-family: Gugi, serif;
+  font-size: 2rem;
+}
+.errorTop{
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+}
+.errorCity{
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+.errorCity:hover{
+  color: #6fa7ff;
+  cursor: pointer;
+}
+.inputSearch{
+  font-size: 20px;
+  border: 1px solid #c5c5c5;
+}
+
+.buttonSearch{
+  font-size: 1rem;
+  padding: 12px 50px 12px 50px;
+  border: 1px solid #e1e1e1;
+  background: #f1f1f1;
+  transition: 0.3s;
+}
+
+.buttonSearch:hover{
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+
+.modalTop{
+  font-size: 1.25rem;
+}
