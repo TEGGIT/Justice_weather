@@ -65,7 +65,7 @@ const Main = () => {
           {!errorRequest ? (
               <span className={classes.main_top}>{(currentWeatherData.name)}</span>
           ) : (
-              <div style={{display: 'flex', alignItems: 'center'}}>
+              <div className={classes.main_error}>
                 <span className={classes.main_top_error}>You entered the city name incorrectly</span>
                 <img src={errorTop} className={classes.errorTop} alt="Error image"/>
               </div>
@@ -95,7 +95,7 @@ const Main = () => {
                     })}
                     <div className={classes.search}>
                       <p>Find your city!</p>
-                      <img src={seacrhIcon} onClick={() => getWeather()} alt="search"/>
+                      <img src={seacrhIcon} onClick={() => getWeather()} alt="search" className={classes.search_icon}/>
                     </div>
                   </div>
               ) : (
